@@ -1,0 +1,3 @@
+﻿# Local editor and generated backup files
+app/ARCH/*.bak
+project/.vscode/

@@ -59,6 +59,10 @@ void AppScheduler_Run(void)
 
         if ((int32_t)(now_ms - g_scheduler_nodes[i].next_run_ms) >= 0) {
             g_scheduler_nodes[i].callback();
+            /*
+             * 通过循环推进 next_run_ms 来追赶丢失的节拍，
+             * 避免主循环偶发卡顿后任务永久漂移到新的相位。
+             */
             do {
                 g_scheduler_nodes[i].next_run_ms += g_scheduler_nodes[i].period_ms;
             } while ((int32_t)(now_ms - g_scheduler_nodes[i].next_run_ms) >= 0);

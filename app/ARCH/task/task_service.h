@@ -19,6 +19,7 @@ typedef enum
     TASK_ACTION_Q2_700_ARC180_ARC180_R90_700_LEFT,    /**< 题目2左侧路线: 700mm -> 180度圆弧 -> 180度圆弧 -> 右转90度 -> 700mm */
     TASK_ACTION_Q2_700_ARC180_ARC180_R90_700_RIGHT,   /**< 题目2右侧路线: 700mm -> 180度圆弧 -> 180度圆弧 -> 右转90度 -> 700mm */
     TASK_ACTION_Q3_1200_R270_500_R420_1800,           /**< 题目3路线: 1200mm -> 右转270度 -> 500mm -> 右转420度 -> 1800mm */
+    TASK_ACTION_Q4,                                   /**< 题目4路线: 1000mm -> 左转90度 -> 1000mm -> 右转90度 -> 1500mm -> 右转90度 -> 75mm -> 左转90度 -> 50mm */
     TASK_ACTION_MOTOR_TEST_1,                         /**< 电机测试 1 */
     TASK_ACTION_MOTOR_TEST_2,                         /**< 电机测试 2 */
     TASK_ACTION_TURN_LEFT_90,                         /**< 左转 90 度 */

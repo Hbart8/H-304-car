@@ -25,6 +25,7 @@ static MenuItem sub_1_7;
 static MenuItem sub_1_8;
 static MenuItem sub_1_9;
 static MenuItem sub_1_10;
+static MenuItem sub_1_11;
 
 static MenuItem sub_2_1;
 static MenuItem sub_2_2;
@@ -89,6 +90,8 @@ static void act_route250(void) { MenuApp_OpenAction(INTERACTION_ACTION_ROUTE_250
 static void act_q2l(void) { MenuApp_OpenAction(INTERACTION_ACTION_Q2_700_ARC180_ARC180_R90_700_LEFT); }
 static void act_q2r(void) { MenuApp_OpenAction(INTERACTION_ACTION_Q2_700_ARC180_ARC180_R90_700_RIGHT); }
 static void act_q3(void) { MenuApp_OpenAction(INTERACTION_ACTION_Q3_1200_R270_500_R420_1800); }
+/* 第四题入口，直接打开新加的直线+转弯路线页。 */
+static void act_q4(void) { MenuApp_OpenAction(INTERACTION_ACTION_Q4); }
 static void act_m1(void) { MenuApp_OpenAction(INTERACTION_ACTION_MOTOR_TEST_1); }
 static void act_m2(void) { MenuApp_OpenAction(INTERACTION_ACTION_MOTOR_TEST_2); }
 static void act_tl90(void) { MenuApp_OpenAction(INTERACTION_ACTION_TURN_LEFT_90); }
@@ -115,7 +118,8 @@ void MenuApp_Init(void) {
     sub_1_7 = (MenuItem){"  Q2 L-R-L",   &main_menu_1, NULL, &sub_1_8,  &sub_1_6, act_q2l};
     sub_1_8 = (MenuItem){"  Q2 R-L-R",   &main_menu_1, NULL, &sub_1_9,  &sub_1_7, act_q2r};
     sub_1_9 = (MenuItem){"  Q3 Arc R100",&main_menu_1, NULL, &sub_1_10, &sub_1_8, act_q3};
-    sub_1_10 = (MenuItem){"  Back",       &main_menu_1, NULL, NULL,      &sub_1_9, act_bak};
+    sub_1_10 = (MenuItem){"  Q4 Route",   &main_menu_1, NULL, &sub_1_11, &sub_1_9, act_q4};
+    sub_1_11 = (MenuItem){"  Back",       &main_menu_1, NULL, NULL,      &sub_1_10, act_bak};
 
     sub_2_1 = (MenuItem){"  M1 Speed CL",&main_menu_2, NULL, &sub_2_2, NULL,     act_m1};
     sub_2_2 = (MenuItem){"  M2 Spin OL", &main_menu_2, NULL, &sub_2_3, &sub_2_1, act_m2};

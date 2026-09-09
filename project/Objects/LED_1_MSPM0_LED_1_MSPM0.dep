@@ -76,8 +76,8 @@ I (..\sdk\source\ti\driverlib\dl_wwdt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_interrupt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_systick.h)(0x67C10126)
 I (..\app\SYS\AppTick.h)(0x69DB9E15)
-I (..\app\ARCH\app_system.h)(0x69DBA8BA)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\app_system.h)(0x69F5A5B1)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\app\SYS\Buzzer.h)(0x69DB9E15)
@@ -242,7 +242,7 @@ I (..\sdk\source\ti\driverlib\m0p\dl_systick.h)(0x67C10126)
 F (..\app\SYS\Delay.h)(0x69428FB8)()
 F (..\app\SYS\Serial.c)(0x69DE4FCC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/serial.o -MMD)
 I (..\app\SYS\Serial.h)(0x69DE4F41)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\sdk\source\ti\devices\msp\msp.h)(0x67C10126)
@@ -474,12 +474,12 @@ I (..\sdk\source\ti\driverlib\dl_wwdt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_interrupt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_systick.h)(0x67C10126)
 F (..\app\SYS\Buzzer.h)(0x69DB9E15)()
-F (..\app\ARCH\app_system.c)(0x69E8A7A7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/app_system.o -MMD)
-I (..\app\ARCH\app_system.h)(0x69DBA8BA)
+F (..\app\ARCH\app_system.c)(0x69F5AA8F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/app_system.o -MMD)
+I (..\app\ARCH\app_system.h)(0x69F5A5B1)
 I (..\app\SYS\AppTick.h)(0x69DB9E15)
 I (..\app\SYS\Serial.h)(0x69DE4F41)
-I (..\app\ARCH\behavior\behavior_motion.h)(0x69E8AFB2)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\behavior\behavior_motion.h)(0x69F5A5B9)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\sdk\source\ti\devices\msp\msp.h)(0x67C10126)
@@ -559,18 +559,18 @@ I (..\app\ARCH\control\motion_control.h)(0x69E326F5)
 I (..\app\ARCH\device\device_center.h)(0x69DF9289)
 I (..\app\ARCH\device\device_gyro.h)(0x69DF4432)
 I (..\app\ARCH\hal\hal_chassis.h)(0x69DF7E61)
-I (..\app\ARCH\interaction\interaction_service.h)(0x69E8D0D7)
-I (..\app\ARCH\scheduler\app_scheduler.h)(0x69DBA833)
-I (..\app\ARCH\task\task_service.h)(0x69E8D0BD)
-F (..\app\ARCH\app_system.h)(0x69DBA8BA)()
-F (..\app\ARCH\config\app_config.h)(0x69E8BA64)()
+I (..\app\ARCH\interaction\interaction_service.h)(0x69F5EBF9)
+I (..\app\ARCH\scheduler\app_scheduler.h)(0x69F5A5B6)
+I (..\app\ARCH\task\task_service.h)(0x69F5EDA6)
+F (..\app\ARCH\app_system.h)(0x69F5A5B1)()
+F (..\app\ARCH\config\app_config.h)(0x69F73844)()
 F (..\app\ARCH\config\board_profile.h)(0x69DF63EA)()
-F (..\app\ARCH\control\pid.c)(0x69DBA6F5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/pid.o -MMD)
-I (..\app\ARCH\control\pid.h)(0x69DBA6F5)
-F (..\app\ARCH\control\pid.h)(0x69DBA6F5)()
-F (..\app\ARCH\control\motion_control.c)(0x69E8B299)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/motion_control.o -MMD)
+F (..\app\ARCH\control\pid.c)(0x69EF1F08)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/pid.o -MMD)
+I (..\app\ARCH\control\pid.h)(0x69EF1E88)
+F (..\app\ARCH\control\pid.h)(0x69EF1E88)()
+F (..\app\ARCH\control\motion_control.c)(0x69EB4EF7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/motion_control.o -MMD)
 I (..\app\ARCH\control\motion_control.h)(0x69E326F5)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\sdk\source\ti\devices\msp\msp.h)(0x67C10126)
@@ -646,16 +646,16 @@ I (..\sdk\source\ti\driverlib\dl_vref.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\dl_wwdt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_interrupt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_systick.h)(0x67C10126)
-I (..\app\ARCH\behavior\behavior_motion.h)(0x69E8AFB2)
-I (..\app\ARCH\control\pid.h)(0x69DBA6F5)
+I (..\app\ARCH\behavior\behavior_motion.h)(0x69F5A5B9)
+I (..\app\ARCH\control\pid.h)(0x69EF1E88)
 I (..\app\ARCH\device\device_center.h)(0x69DF9289)
 I (..\app\ARCH\device\device_gyro.h)(0x69DF4432)
 I (..\app\ARCH\device\device_track_sensor.h)(0x69DC7BE9)
 I (..\app\ARCH\hal\hal_chassis.h)(0x69DF7E61)
 F (..\app\ARCH\control\motion_control.h)(0x69E326F5)()
 F (..\app\ARCH\behavior\behavior_motion.c)(0x69E8AFC1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/behavior_motion.o -MMD)
-I (..\app\ARCH\behavior\behavior_motion.h)(0x69E8AFB2)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\behavior\behavior_motion.h)(0x69F5A5B9)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\sdk\source\ti\devices\msp\msp.h)(0x67C10126)
@@ -731,10 +731,10 @@ I (..\sdk\source\ti\driverlib\dl_vref.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\dl_wwdt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_interrupt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_systick.h)(0x67C10126)
-F (..\app\ARCH\behavior\behavior_motion.h)(0x69E8AFB2)()
+F (..\app\ARCH\behavior\behavior_motion.h)(0x69F5A5B9)()
 F (..\app\ARCH\device\device_center.c)(0x69E20F37)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/device_center.o -MMD)
 I (..\app\ARCH\device\device_center.h)(0x69DF9289)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\sdk\source\ti\devices\msp\msp.h)(0x67C10126)
@@ -819,7 +819,7 @@ F (..\app\ARCH\device\device_center.h)(0x69DF9289)()
 F (..\app\ARCH\device\device_gyro.c)(0x69E0EE1C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/device_gyro.o -MMD)
 I (..\app\ARCH\device\device_gyro.h)(0x69DF4432)
 I (..\app\SYS\AppTick.h)(0x69DB9E15)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\sdk\source\ti\devices\msp\msp.h)(0x67C10126)
@@ -899,7 +899,7 @@ I (..\app\ARCH\device\device_gyro_imu660ra_fw.h)(0x69DF411B)
 F (..\app\ARCH\device\device_gyro.h)(0x69DF4432)()
 F (..\app\ARCH\device\device_track_sensor.c)(0x69DC7BE9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/device_track_sensor.o -MMD)
 I (..\app\ARCH\device\device_track_sensor.h)(0x69DC7BE9)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\sdk\source\ti\devices\msp\msp.h)(0x67C10126)
@@ -977,11 +977,11 @@ I (..\sdk\source\ti\driverlib\m0p\dl_interrupt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_systick.h)(0x67C10126)
 I (..\app\ARCH\hal\hal_board.h)(0x69DC7A5D)
 F (..\app\ARCH\device\device_track_sensor.h)(0x69DC7BE9)()
-F (..\app\ARCH\task\task_service.c)(0x69E8D12A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/task_service.o -MMD)
-I (..\app\ARCH\task\task_service.h)(0x69E8D0BD)
+F (..\app\ARCH\task\task_service.c)(0x69F5F6E1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/task_service.o -MMD)
+I (..\app\ARCH\task\task_service.h)(0x69F5EDA6)
 I (..\app\SYS\AppTick.h)(0x69DB9E15)
-I (..\app\ARCH\behavior\behavior_motion.h)(0x69E8AFB2)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\behavior\behavior_motion.h)(0x69F5A5B9)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\sdk\source\ti\devices\msp\msp.h)(0x67C10126)
@@ -1059,11 +1059,11 @@ I (..\sdk\source\ti\driverlib\m0p\dl_interrupt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_systick.h)(0x67C10126)
 I (..\app\ARCH\device\device_center.h)(0x69DF9289)
 I (..\app\ARCH\device\device_gyro.h)(0x69DF4432)
-F (..\app\ARCH\task\task_service.h)(0x69E8D0BD)()
-F (..\app\ARCH\scheduler\app_scheduler.c)(0x69DBA833)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/app_scheduler.o -MMD)
-I (..\app\ARCH\scheduler\app_scheduler.h)(0x69DBA833)
+F (..\app\ARCH\task\task_service.h)(0x69F5EDA6)()
+F (..\app\ARCH\scheduler\app_scheduler.c)(0x69F5B802)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/app_scheduler.o -MMD)
+I (..\app\ARCH\scheduler\app_scheduler.h)(0x69F5A5B6)
 I (..\app\SYS\AppTick.h)(0x69DB9E15)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\sdk\source\ti\devices\msp\msp.h)(0x67C10126)
@@ -1139,10 +1139,10 @@ I (..\sdk\source\ti\driverlib\dl_vref.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\dl_wwdt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_interrupt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_systick.h)(0x67C10126)
-F (..\app\ARCH\scheduler\app_scheduler.h)(0x69DBA833)()
-F (..\app\ARCH\interaction\interaction_service.c)(0x69E8D15D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/interaction_service.o -MMD)
-I (..\app\ARCH\interaction\interaction_service.h)(0x69E8D0D7)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+F (..\app\ARCH\scheduler\app_scheduler.h)(0x69F5A5B6)()
+F (..\app\ARCH\interaction\interaction_service.c)(0x69F5EE3C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/interaction_service.o -MMD)
+I (..\app\ARCH\interaction\interaction_service.h)(0x69F5EBF9)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\sdk\source\ti\devices\msp\msp.h)(0x67C10126)
@@ -1219,11 +1219,11 @@ I (..\sdk\source\ti\driverlib\dl_wwdt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_interrupt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_systick.h)(0x67C10126)
 I (..\app\SYS\AppTick.h)(0x69DB9E15)
-I (..\app\ARCH\behavior\behavior_motion.h)(0x69E8AFB2)
+I (..\app\ARCH\behavior\behavior_motion.h)(0x69F5A5B9)
 I (..\app\ARCH\control\motion_control.h)(0x69E326F5)
 I (..\app\ARCH\device\device_center.h)(0x69DF9289)
-I (..\app\ARCH\task\task_service.h)(0x69E8D0BD)
-F (..\app\ARCH\interaction\interaction_service.h)(0x69E8D0D7)()
+I (..\app\ARCH\task\task_service.h)(0x69F5EDA6)
+F (..\app\ARCH\interaction\interaction_service.h)(0x69F5EBF9)()
 F (..\app\ARCH\hal\hal_board.c)(0x69DE3F49)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/hal_board.o -MMD)
 I (..\app\ARCH\hal\hal_board.h)(0x69DC7A5D)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
@@ -1378,7 +1378,7 @@ I (..\sdk\source\ti\driverlib\dl_vref.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\dl_wwdt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_interrupt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_systick.h)(0x67C10126)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\hal\hal_board.h)(0x69DC7A5D)
 F (..\app\ARCH\hal\hal_chassis.h)(0x69DF7E61)()
 F (..\app\OLED\OLED.c)(0x69DA5476)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/oled.o -MMD)
@@ -1466,14 +1466,14 @@ F (..\app\OLED\OLED_Data.h)(0x69428FB8)()
 F (..\app\MENU\menu.c)(0x69DF238A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/menu.o -MMD)
 I (..\app\MENU\menu.h)(0x69DA5476)
 F (..\app\MENU\menu.h)(0x69DA5476)()
-F (..\app\MENU\menu_app.c)(0x69E8D181)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/menu_app.o -MMD)
+F (..\app\MENU\menu_app.c)(0x69F5EE3F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/menu_app.o -MMD)
 I (..\app\MENU\menu_app.h)(0x69DB9E15)
 I (..\app\MENU\menu.h)(0x69DA5476)
 I (..\app\OLED\OLED.h)(0x69DA4A9D)
 I (..\app\OLED\OLED_Data.h)(0x69428FB8)
 I (..\app\MENU\menu_port.h)(0x69DF322E)
 I (..\app\ARCH\device\device_center.h)(0x69DF9289)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\sdk\source\ti\devices\msp\msp.h)(0x67C10126)
@@ -1549,7 +1549,7 @@ I (..\sdk\source\ti\driverlib\dl_vref.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\dl_wwdt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_interrupt.h)(0x67C10126)
 I (..\sdk\source\ti\driverlib\m0p\dl_systick.h)(0x67C10126)
-I (..\app\ARCH\interaction\interaction_service.h)(0x69E8D0D7)
+I (..\app\ARCH\interaction\interaction_service.h)(0x69F5EBF9)
 F (..\app\MENU\menu_app.h)(0x69DB9E15)()
 F (..\app\MENU\menu_port.c)(0x69DF36E5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -Wno-covered-switch-default -Wno-unreachable-code-break -I ../sdk/source/third_party/CMSIS/Core/Include -I ../sdk/source -I ../../Project -I ../app -I ../app/OLED -I ../app/SYS-D__UVISION_VERSION="541" -D__MSPM0G3507__ -D__MSPM0G3507__-o ./objects/menu_port.o -MMD)
 I (..\app\MENU\menu_port.h)(0x69DF322E)
@@ -1559,7 +1559,7 @@ I (..\app\OLED\OLED_Data.h)(0x69428FB8)
 I (..\app\MENU\menu_app.h)(0x69DB9E15)
 I (..\app\SYS\AppTick.h)(0x69DB9E15)
 I (..\app\ARCH\device\device_center.h)(0x69DF9289)
-I (..\app\ARCH\config\app_config.h)(0x69E8BA64)
+I (..\app\ARCH\config\app_config.h)(0x69F73844)
 I (..\app\ARCH\config\board_profile.h)(0x69DF63EA)
 I (..\..\Project\ti_msp_dl_config.h)(0x69DBA9FF)
 I (..\sdk\source\ti\devices\msp\msp.h)(0x67C10126)

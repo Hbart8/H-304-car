@@ -1320,45 +1320,210 @@ static void TaskService_RunQ3_1200_R270_500_R420_1800(void)
             arc_radius_mm,
             (int16_t)(-APP_Q3_ARC2_ANGLE_DEG10),
             phase_distance_mm)) {
-            TaskService_StartRouteDistancePhaseToHeading(straight_speed_mmps,
-                final_stabilize_mm,
-                g_turn_target_heading_deg10);
+            TaskService_StartRouteDistancePhase(straight_speed_mmps,
+                APP_Q3_SEGMENT3_MM);
             g_status.phase_index = 5U;
             g_status.progress = 86U;
         }
         break;
 
     case 5U:
-        if (final_stabilize_mm > 0L) {
-            int32_t progress = (phase_distance_mm * 4L) / final_stabilize_mm;
+        if (APP_Q3_SEGMENT3_MM > 0L) {
+            int32_t progress = (phase_distance_mm * 14L) / APP_Q3_SEGMENT3_MM;
             if (progress < 0L) {
                 progress = 0L;
             }
-            if (progress > 4L) {
-                progress = 4L;
+            if (progress > 14L) {
+                progress = 14L;
             }
             g_status.progress = (uint8_t)(86U + progress);
         }
-        if (TaskService_IsDistanceDoneByMeasure(phase_distance_mm, final_stabilize_mm)) {
-            TaskService_StartRouteDistancePhase(straight_speed_mmps,
-                final_main_mm);
-            g_status.phase_index = 6U;
-            g_status.progress = 90U;
+        if (TaskService_IsDistanceDoneByMeasure(phase_distance_mm, APP_Q3_SEGMENT3_MM)) {
+            g_status.stage = TASK_STAGE_COMPLETE;
+            g_status.progress = 100U;
+            TaskService_FinishCurrent();
         }
         break;
 
     case 6U:
-        if (final_main_mm > 0L) {
-            int32_t progress = (phase_distance_mm * 10L) / final_main_mm;
+        break;
+
+    default:
+        g_status.progress = 0U;
+        break;
+    }
+}
+
+static void TaskService_RunQ4(void)
+{
+    DeviceCenter_Snapshot_t device;
+    int32_t phase_distance_mm;
+    int16_t straight_speed_mmps = AppConfig_GetRouteTestSpeedMmps();
+    int16_t turn_done_yaw_abs_mdps = APP_ROUTE_TURN_DONE_YAW_ABS_MDPS;
+    uint8_t turn_done_hold_cycles = APP_ROUTE_TURN_DONE_HOLD_CYCLES;
+
+    /*
+     * phase 1: 直行 1000
+     * phase 2: 左转 90
+     * phase 3: 直行 1000
+     * phase 4: 右转 90
+     * phase 5: 直行 1500
+     * phase 6: 右转 90
+     * phase 7: 直行 75
+     * phase 8: 左转 90
+     * phase 9: 直行 50
+     */
+    DeviceCenter_GetSnapshot(&device);
+
+    if (g_status.stage == TASK_STAGE_PREPARE) {
+        DeviceCenter_ResetOdometry();
+        TaskService_StartRouteDistancePhase(straight_speed_mmps, 1000);
+        g_status.stage = TASK_STAGE_EXECUTE;
+        g_status.phase_index = 1U;
+        g_status.progress = 5U;
+        g_phase_start_ms = AppTick_GetMs();
+        return;
+    }
+
+    phase_distance_mm = device.chassis_distance_mm - g_phase_origin_distance_mm;
+
+    switch (g_status.phase_index) {
+    case 1U:
+        if (phase_distance_mm > 0L) {
+            int32_t progress = (phase_distance_mm * 12L) / APP_Q4_SEGMENT1_MM;
             if (progress < 0L) {
                 progress = 0L;
             }
-            if (progress > 10L) {
-                progress = 10L;
+            if (progress > 12L) {
+                progress = 12L;
             }
-            g_status.progress = (uint8_t)(90U + progress);
+            g_status.progress = (uint8_t)(5U + progress);
         }
-        if (TaskService_IsDistanceDoneByMeasure(phase_distance_mm, final_main_mm)) {
+        if (TaskService_IsRouteTurnEntryReady(phase_distance_mm, APP_Q4_SEGMENT1_MM)) {
+            TaskService_StartTurnPhase(APP_Q4_TURN1_ANGLE_DEG10);
+            g_status.phase_index = 2U;
+            g_status.progress = 20U;
+        }
+        break;
+
+    case 2U:
+        g_status.progress = 24U;
+        if (TaskService_IsTurnDoneCustom(APP_ROUTE_TURN_DONE_HEADING_ERR_DEG10,
+            turn_done_yaw_abs_mdps,
+            turn_done_hold_cycles)) {
+            TaskService_StartRouteDistancePhaseToHeading(straight_speed_mmps,
+                APP_Q4_SEGMENT2_MM,
+                g_turn_target_heading_deg10);
+            g_status.phase_index = 3U;
+            g_status.progress = 28U;
+        }
+        break;
+
+    case 3U:
+        if (phase_distance_mm > 0L) {
+            int32_t progress = (phase_distance_mm * 12L) / APP_Q4_SEGMENT2_MM;
+            if (progress < 0L) {
+                progress = 0L;
+            }
+            if (progress > 12L) {
+                progress = 12L;
+            }
+            g_status.progress = (uint8_t)(28U + progress);
+        }
+        if (TaskService_IsRouteTurnEntryReady(phase_distance_mm, APP_Q4_SEGMENT2_MM)) {
+            TaskService_StartTurnPhase(APP_Q4_TURN2_ANGLE_DEG10);
+            g_status.phase_index = 4U;
+            g_status.progress = 42U;
+        }
+        break;
+
+    case 4U:
+        g_status.progress = 46U;
+        if (TaskService_IsTurnDoneCustom(APP_ROUTE_TURN_DONE_HEADING_ERR_DEG10,
+            turn_done_yaw_abs_mdps,
+            turn_done_hold_cycles)) {
+            TaskService_StartRouteDistancePhaseToHeading(straight_speed_mmps,
+                APP_Q4_SEGMENT3_MM,
+                g_turn_target_heading_deg10);
+            g_status.phase_index = 5U;
+            g_status.progress = 50U;
+        }
+        break;
+
+    case 5U:
+        if (phase_distance_mm > 0L) {
+            int32_t progress = (phase_distance_mm * 20L) / APP_Q4_SEGMENT3_MM;
+            if (progress < 0L) {
+                progress = 0L;
+            }
+            if (progress > 20L) {
+                progress = 20L;
+            }
+            g_status.progress = (uint8_t)(50U + progress);
+        }
+        if (TaskService_IsRouteTurnEntryReady(phase_distance_mm, APP_Q4_SEGMENT3_MM)) {
+            TaskService_StartTurnPhase(APP_Q4_TURN3_ANGLE_DEG10);
+            g_status.phase_index = 6U;
+            g_status.progress = 72U;
+        }
+        break;
+
+    case 6U:
+        g_status.progress = 76U;
+        if (TaskService_IsTurnDoneCustom(APP_ROUTE_TURN_DONE_HEADING_ERR_DEG10,
+            turn_done_yaw_abs_mdps,
+            turn_done_hold_cycles)) {
+            TaskService_StartRouteDistancePhaseToHeading(straight_speed_mmps,
+                APP_Q4_SEGMENT4_MM,
+                g_turn_target_heading_deg10);
+            g_status.phase_index = 7U;
+            g_status.progress = 80U;
+        }
+        break;
+
+    case 7U:
+        if (phase_distance_mm > 0L) {
+            int32_t progress = (phase_distance_mm * 6L) / APP_Q4_SEGMENT4_MM;
+            if (progress < 0L) {
+                progress = 0L;
+            }
+            if (progress > 6L) {
+                progress = 6L;
+            }
+            g_status.progress = (uint8_t)(80U + progress);
+        }
+        if (TaskService_IsRouteTurnEntryReady(phase_distance_mm, APP_Q4_SEGMENT4_MM)) {
+            TaskService_StartTurnPhase(APP_Q4_TURN4_ANGLE_DEG10);
+            g_status.phase_index = 8U;
+            g_status.progress = 88U;
+        }
+        break;
+
+    case 8U:
+        g_status.progress = 92U;
+        if (TaskService_IsTurnDoneCustom(APP_ROUTE_TURN_DONE_HEADING_ERR_DEG10,
+            turn_done_yaw_abs_mdps,
+            turn_done_hold_cycles)) {
+            TaskService_StartRouteDistancePhaseToHeading(straight_speed_mmps,
+                APP_Q4_SEGMENT5_MM,
+                g_turn_target_heading_deg10);
+            g_status.phase_index = 9U;
+            g_status.progress = 95U;
+        }
+        break;
+
+    case 9U:
+        if (phase_distance_mm > 0L) {
+            int32_t progress = (phase_distance_mm * 5L) / APP_Q4_SEGMENT5_MM;
+            if (progress < 0L) {
+                progress = 0L;
+            }
+            if (progress > 5L) {
+                progress = 5L;
+            }
+            g_status.progress = (uint8_t)(95U + progress);
+        }
+        if (TaskService_IsDistanceDoneByMeasure(phase_distance_mm, APP_Q4_SEGMENT5_MM)) {
             g_status.stage = TASK_STAGE_COMPLETE;
             g_status.progress = 100U;
             TaskService_FinishCurrent();
@@ -1370,6 +1535,7 @@ static void TaskService_RunQ3_1200_R270_500_R420_1800(void)
         break;
     }
 }
+
 
 static void TaskService_RunSensorScan(void)
 {
@@ -1479,6 +1645,9 @@ void TaskService_Tick10ms(void)
     case TASK_ACTION_Q3_1200_R270_500_R420_1800:
         TaskService_RunQ3_1200_R270_500_R420_1800();
         break;
+    case TASK_ACTION_Q4:
+        TaskService_RunQ4();
+        break;
     case TASK_ACTION_MOTOR_TEST_1:
         TaskService_RunMotorTest1();
         break;
@@ -1531,6 +1700,8 @@ const char *TaskService_GetActionName(TaskAction_e action)
         return "Q2Right";
     case TASK_ACTION_Q3_1200_R270_500_R420_1800:
         return "Q3Route";
+    case TASK_ACTION_Q4:
+        return "Q4Route";
     case TASK_ACTION_MOTOR_TEST_1:
         return "Motor1";
     case TASK_ACTION_MOTOR_TEST_2:

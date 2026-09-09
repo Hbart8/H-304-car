@@ -502,6 +502,18 @@ static void InteractionService_UpdateRuntimePage(void)
         snprintf(line4, sizeof(line4), "12 A270 5 A420");
         InteractionService_SetPage(title, line2, line3, line4);
         break;
+    case INTERACTION_ACTION_Q4:
+        title = "Q4 Route";
+        snprintf(line2, sizeof(line2), "S:%5d H:%4d",
+            (int)device_snapshot.chassis_distance_mm,
+            (int)device_snapshot.imu_heading_deg10);
+        snprintf(line3, sizeof(line3), "Step:%u P:%3u%%",
+            (unsigned)task_status.phase_index,
+            (unsigned)task_status.progress);
+        /* 运行页只放前半段摘要，完整相位含义在 task_service.c 的 Q4 状态机里。 */
+        snprintf(line4, sizeof(line4), "10 L90 10 R90");
+        InteractionService_SetPage(title, line2, line3, line4);
+        break;
     case INTERACTION_ACTION_MOTOR_TEST_1:
         title = "M1 Q50 Count";
         snprintf(line2, sizeof(line2), "A:%4d B:%4d",
@@ -625,6 +637,9 @@ void InteractionService_RequestAction(InteractionAction_e action)
         break;
     case INTERACTION_ACTION_Q3_1200_R270_500_R420_1800:
         queued = TaskService_Enqueue(TASK_ACTION_Q3_1200_R270_500_R420_1800);
+        break;
+    case INTERACTION_ACTION_Q4:
+        queued = TaskService_Enqueue(TASK_ACTION_Q4);
         break;
     case INTERACTION_ACTION_MOTOR_TEST_1:
         queued = TaskService_Enqueue(TASK_ACTION_MOTOR_TEST_1);
